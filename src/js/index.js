@@ -1,4 +1,5 @@
 //import react into the bundle
+
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -6,7 +7,11 @@ import ReactDOM from "react-dom";
 import "../styles/index.css";
 
 //import your own components
-import Home from "./component/home.jsx";
+import Home from "./component/Home.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+var i = 0;
+const myInterval = setInterval(() => {
+	++i;
+
+	ReactDOM.render(<Home number={i} />, document.querySelector("#app"));
+}, 10);

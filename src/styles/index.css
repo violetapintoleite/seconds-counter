@@ -10,3 +10,17 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+.container{
+    background: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buttons{
+   margin: 1rem;
+    text-align: center;
+}
+
+
