@@ -13,5 +13,8 @@ var i = 0;
 const myInterval = setInterval(() => {
 	++i;
 
-	ReactDOM.render(<Home number={i} />, document.querySelector("#app"));
+	ReactDOM.render(
+		<Home number={i} interval={myInterval} />,
+		document.querySelector("#app")
+	);
 }, 10);

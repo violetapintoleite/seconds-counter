@@ -38,7 +38,7 @@ const Home = (prop) => {
 				</div>
 			</div>
 			<div className="buttons">
-				<Buttons />
+				<Buttons interval={prop.interval} />
 			</div>
 		</div>
 	);
@@ -46,5 +46,6 @@ const Home = (prop) => {
 
 Home.propTypes = {
 	number: propTypes.number.isRequired,
+	interval: propTypes.func,
 };
 export default Home;
