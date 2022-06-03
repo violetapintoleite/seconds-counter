@@ -21,6 +21,17 @@
 .buttons{
    margin: 1rem;
     text-align: center;
+    
 }
+
+button{
+    border: none;
+    margin: 1rem;
+}
+
+button:hover{
+    color: rgb(170, 164, 164);
+}
+
 
 
